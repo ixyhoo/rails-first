@@ -1,0 +1,13 @@
+<h1>Page of contact </h1>
+
+<% members = ["joe", "william", "max", "dylan", "bob"] %>
+
+<h2>Meet opur team</h2>
+<ol>
+<% members.each do |member| %>
+<li> <%member.capitalize%> </li>
+<%end%>
+
+</ol>
+<%= link_to "Meet our team", about_path %>
+<%= link_to "Meet our team", home_path %>
